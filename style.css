@@ -1,0 +1,33 @@
+h1 {
+    margin-left: 20px;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+
+
+}
+
+h2 {
+    font-weight: bold;
+    background-color: blanchedalmond;
+}
+
+nav {
+
+    font-size: 25px;
+    background-color: rgb(204, 95, 95);
+    height: 100px;
+    padding-left: 500px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+body {
+    background-image: url('shoopingimage.jpeg');
+    background-size: cover;
+}
