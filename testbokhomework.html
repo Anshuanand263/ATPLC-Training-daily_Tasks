@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>table html</title>
+    <style>
+        table {
+            background-color: lightblue;
+            height: 500px;
+            width: 600px;
+        }
+
+        th {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        td {
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <table border="5">
+        <caption><b>SHOPPING BILL</b></caption>
+        <tr>
+            <th colspan="3">invoice#123456789</th>
+            <th>18 january 2022</th>
+        </tr>
+        <tr>
+            <td colspan="2"><b>pay to:</b>
+                <br>Acme billing co.<br>123 Main st. <br>cityville,NA12345
+            </td>
+            <td colspan="2"><b>customer:</b><br>john smith<br>321 willow way<br>southeast northwestershine,MA 54321</td>
+
+        </tr>
+        <tr>
+            <th>Name/Description</th>
+            <th>Qty.</th>
+            <th>@</th>
+            <th>cost</th>
+        </tr>
+        <tr>
+            <td>paperclips</td>
+            <td>1000</td>
+            <td>0.01</td>
+            <td>10.00</td>
+
+        </tr>
+        <tr>
+            <td>staples </td>
+            <td>100</td>
+            <td>1.00</td>
+            <td>100.00</td>
+        </tr>
+        <tr>
+            <th colspan="3">subtotal</th>
+            <td>110.00</td>
+        </tr>
+        <tr>
+            <th colspan="2">tax</th>
+            <td>8%</td>
+            <td>8.80</td>
+        </tr>
+        <tr>
+            <th colspan="3">Grand total</th>
+            <td>118.80</td>
+        </tr>
+    </table>
+</body>
+
+</html>
