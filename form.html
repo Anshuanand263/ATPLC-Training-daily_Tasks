@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>khatkhat.com</title>
+    <style>
+        .main {
+            float: left;
+            margin-left: 25%;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <form>
+            <h2>REGISTRATION</h2>
+            <div>
+                <label id="name-label" for="name">NAME</label>
+                <input type="text" name="name" placeholder="enter your name" required><br>
+
+                <label id="email-label" for="email">EMAIL</label>
+                <input type="email" name="email" id="email" placeholder="abc1234@gmail.com" required><br><br>
+
+                <label id="number-label" for="number">NUMBER</label>
+                <input type="number" name="number" id="number" placeholder="1234567896" required><br><br>
+
+
+
+                <label id="number-label" for="number">age </label>
+                <input type="number" name="number" id="number" placeholder="age" max="100" min="0"><br><br>
+
+                <label for="drop-down">Choose your country </label><br>
+                <select name="drop-down" id="drop-down">
+                    <option value="none">NONE</option>
+                    <option value="russia">Russia</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="usa">usa</option>
+                    <option value="europe">europe</option>
+                </select><br>
+
+                <label>your visited place ?</label><br><br>
+                <input type="checkbox" name="topic1" value="patna">PATNA<br>
+                <input type="checkbox" name="topic2" value="kolkata">kolkata<br>
+                <input type="checkbox" name="topic3" value="delhi">Delhi<br>
+                <input type="checkbox" name="topic4" value="mumbai">chennai<br>
+                <br><br>
+
+                <label>Do you like india?</label><br><a href="https://en.wikipedia.org/wiki/File:Massage_Frankfurt.jpg"
+                    target="_blank">Additional service!</a><br>
+                <input type="radio" name="yes" value="yes">YES
+                <input type="radio" name="no" value="no">NO <br>
+
+                <label>write some word about india?</label><br>
+                <textarea rows="5" cols="50" name="description" id="description"></textarea><br>
+                <input type="submit" value="sign-up">
+            </div>

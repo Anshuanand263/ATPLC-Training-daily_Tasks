@@ -32,3 +32,13 @@ li {
 a {
     color: black;
 }
+
+#head {
+    float: right;
+    border: 2px solid black;
+
+    background-color: rgb(42, 200, 211);
+    padding: 5px;
+    border-radius: 35px;
+
+}
