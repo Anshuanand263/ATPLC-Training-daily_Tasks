@@ -5,7 +5,8 @@ h1 {
 }
 
 body {
-    background-image: url(pexels-photo-220182.jpeg);
+    background-image: url('pexels-photo-220182.jpeg');
+
 }
 
 h2 {
