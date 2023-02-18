@@ -35,3 +35,38 @@ body {
     background-image: url('shoopingimage.jpeg');
     background-size: cover;
 }
+
+@media (max-width:500px) {
+    body {
+
+        background-size: cover;
+
+    }
+
+    h1 {
+        margin-left: 10px;
+        font-size: 50px;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 30px;
+
+    }
+
+    nav {
+
+        font-size: 15px;
+
+        height: 50px;
+        padding-left: 0px !important;
+
+    }
+
+    #gap {
+        padding-left: none;
+    }
+
+
+}
