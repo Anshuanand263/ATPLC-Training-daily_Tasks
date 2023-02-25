@@ -1,0 +1,110 @@
+* {
+    margin: 0%;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 15px;
+    border-bottom: 5px solid black;
+    height: 100px;
+}
+
+nav {
+    background-color: gainsboro;
+    text-align: center;
+    word-spacing: 10px;
+    height: 30px;
+    border-bottom: 3px solid black;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    padding: 5px;
+
+}
+
+#div1 {
+    height: 500px;
+    width: 700px;
+    border: 2px solid black;
+    background-color: azure;
+}
+
+#div1 ul a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+
+
+}
+
+#div2 {
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+
+}
+
+#div3 {
+    height: 500px;
+    width: 700px;
+    border: 2px solid black;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.div4 {
+    height: 135px;
+    border: 2px solid black;
+    display: flex;
+
+}
+
+.div4 div {
+    margin-left: 10px;
+    border-right: 1px solid black;
+    display: grid;
+}
+
+.div4 a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+.div5 {
+    display: flex;
+}
+
+
+.div5 div {
+    height: 50vh;
+    width: 100%;
+    border: 2px solid black;
+
+}
+
+.div5 div div {
+    height: auto;
+    font-size: 17px;
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+
+        font-size: 30px;
+        margin-top: 5px;
+        border-bottom: 3px solid black;
+        height: 50px;
+    }
+}
