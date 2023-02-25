@@ -1,5 +1,6 @@
 * {
     margin: 0%;
+
 }
 
 h1 {
@@ -96,7 +97,11 @@ nav a {
 
 .div5 div div {
     height: auto;
-    font-size: 17px;
+    font-size: 22px;
+}
+
+.div5 div div a {
+    color: black;
 }
 
 @media screen and (max-width:600px) {
