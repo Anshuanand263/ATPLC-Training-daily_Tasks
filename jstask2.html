@@ -9,7 +9,46 @@
 </head>
 
 <body>
+    <center>
 
+        <h2> check no is even or odd</h2>
+        <p id="para1"></p>
+        <h2> Write an any program to compare between two numbers and also check it's data type.</h2>
+        <p id="para2"></p>
+    </center>
+    <script>
+        // check no is even or odd
+        const num = 10;
+        if (num % 2 == 0) {
+            console.log("check no is even ");
+            document.getElementById("para1").innerHTML = "even";
+        }
+        else {
+            console.log("check no is odd ");
+            document.getElementById("para1").innerHTML = "odd";
+
+        }
+        // Write an any program to compare between two numbers and also check it's data type.
+        let num1 = 20;
+        document.getElementById("para2").innerHTML = "number 1" + num1;
+        let num2 = 24;
+        document.getElementById("para2").innerHTML = + num2;
+        if (num1 > num2) {
+            console.log("greater number : " + num1);
+            document.getElementById("para2").innerHTML = "greater number:" + num1;
+
+        }
+        else if (num1 < num2) {
+            console.log("greater number : " + num2);
+            document.getElementById("para2").innerHTML = "greater number:" + num2;
+
+        }
+        else {
+            console.log("number is equal ");
+            document.getElementById("para2").innerHTML = "number is equal";
+
+        }
+    </script>
 </body>
 
 </html>
