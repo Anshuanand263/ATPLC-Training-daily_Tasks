@@ -11,14 +11,34 @@
 <body>
     <center>
 
+        <h2> filter negative number</h2>
+        <p id="para0"></p>
         <h2> check no is even or odd</h2>
         <p id="para1"></p>
         <h2> Write an any program to compare between two numbers and also check it's data type.</h2>
         <p id="para2"></p>
+        <h2> Write a JavaScript function to get the difference between a given number and 13, if the number is greater
+            than 13 return double the absolute difference.</h2>
+        <p id="para3"></p>
     </center>
     <script>
-        // check no is even or odd
-        const num = 10;
+        alert("filter negative number");
+        function filter(number) {
+            if (number < 0) {
+                document.getElementById("para0").innerHTML = "negative no:" + number;
+            }
+            else {
+                document.getElementById("para0").innerHTML = "it is non-negative number";
+
+            }
+        }
+
+        let number = prompt("enter no ");
+
+        filter(number);
+
+        alert("check no is even or odd");
+        const num = prompt("enter a no");
         if (num % 2 == 0) {
             console.log("check no is even ");
             document.getElementById("para1").innerHTML = "even";
@@ -28,10 +48,10 @@
             document.getElementById("para1").innerHTML = "odd";
 
         }
-        // Write an any program to compare between two numbers and also check it's data type.
-        let num1 = 20;
+        alert("Write an any program to compare between two numbers and also check it's data type.");
+        let num1 = prompt("enter first no");
         document.getElementById("para2").innerHTML = "number 1" + num1;
-        let num2 = 24;
+        let num2 = prompt("enter second no");
         document.getElementById("para2").innerHTML = + num2;
         if (num1 > num2) {
             console.log("greater number : " + num1);
@@ -48,6 +68,24 @@
             document.getElementById("para2").innerHTML = "number is equal";
 
         }
+        alert("Write a JavaScript function to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.");
+        let num3 = prompt("enter first no");
+        let num4 = prompt("enter second no");
+        let result;
+        if (num3 >= num4) {
+            result = num3 - num4;
+        } else {
+            result = num4 - num3;
+        }
+        if (result > 13) {
+            document.getElementById("para3").innerHTML = 2 * result;
+        } else {
+
+            document.getElementById("para3").innerHTML = result;
+        }
+
+
+
     </script>
 </body>
 
