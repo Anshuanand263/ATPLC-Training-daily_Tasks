@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script tut 4</title>
+</head>
+
+<body>
+    <form>
+        <h2>REGISTRATION</h2>
+        <div>
+            <label id="name-label" for="name">NAME</label>
+            <input type="text" name="name" id="name" placeholder="enter your name" required><br>
+
+            <label id="email-label" for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="abc1234@gmail.com" required><br><br>
+
+            <label id="number-label" for="number">NUMBER</label>
+            <input type="number" name="number" id="number" placeholder="1234567896" required><br><br>
+
+
+
+            <label id="number-age" for="number">age </label>
+            <input type="number" name="age" id="age" placeholder="age" max="100" min="0"><br><br>
+
+            <button type="button" onclick="fico()">SUBMIT</button>
+
+
+    </form>
+
+    <div id="box"></div>
+
+    <script>
+        function fico() {
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const number = document.getElementById("number").value;
+            const age = document.getElementById("age").value;
+
+
+
+
+            const box = document.getElementById("box");
+
+            const nameElement = document.createElement("p");
+            nameElement.innerHTML = "Name: " + name;
+            box.appendChild(nameElement);
+
+            const emailElement = document.createElement("p");
+            emailElement.innerHTML = "Email: " + email;
+            box.appendChild(emailElement);
+
+            const phoneElement = document.createElement("p");
+            phoneElement.innerHTML = "Phone: " + number;
+            box.appendChild(phoneElement);
+            const ageElement = document.createElement("p");
+            ageElement.innerHTML = "Age: " + age;
+            box.appendChild(ageElement);
+
+        }
+    </script>
+</body>
+
+</html>

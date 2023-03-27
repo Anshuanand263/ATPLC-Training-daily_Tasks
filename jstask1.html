@@ -14,45 +14,60 @@
         <h2>Name and address</h2>
         <p id="para1"></p>
         <h2>Addition of two number</h2>
-        <p id="para2"></p>
-        <h2>square of two number</h2>
-        <p id="para3"></p>
-        <h2> factorial of a number</h2>
-        <p id="para4"></p>
-        <h2> fibonacci series number at nth position</h2>
-        <p id="para5"></p>
+        <form>
+            enter first no: <input type="number" placeholder="number" id="no1">
+            enter second no: <input type="number" placeholder="number" id="no2">
+            <input type="submit" value="submit" onclick="add()">
+            <h2>square of number</h2>
+            enter no: <input type="number" placeholder="number" id="no3">
+            <input type="submit" value="submit" onclick="square()">
+            <h2> factorial of a number</h2>
+            enter no: <input type="number" placeholder="number" id="no4">
+            <input type="submit" value="submit" onclick="factorial()">
+            <h2> fibonacci series number at nth position</h2>
+            enter position: <input type="number" placeholder="number" id="no5">
+
+            <input type="submit" value="submit" onclick="fico()">
+        </form>
     </center>
     <script>
         //print name and address
-        document.getElementById("para1").innerHTML = "name:ANSHU ANAND \n address:motihari";
+        document.getElementById("para1").innerHTML = "name:ANSHU ANAND \n address : motihari";
         //Addition of two number
-        let num1 = 3;
-        let num2 = 4;
-        let sum = (num1 + num2);
-        console.log("addition of two num:" + sum);
-        document.getElementById("para2").innerHTML = sum;
+        function add() {
 
-        alert("square of two number");
-        const num = prompt("enter  no");
-        console.log("square of num:" + (num * num));
-        document.getElementById("para3").innerHTML = num * num;
-        alert("factorial of a number");
-        let no = prompt("enter  no");
-        let result = 1;
-        for (let i = 1; no >= i; i++)
-            result = result * i;
-        console.log("factorial=" + result);
-        document.getElementById("para4").innerHTML = result;
-        alert("fibonacci series");
-        let n = prompt("enter nth postion"), base1 = 0, base2 = 1, other;
-        for (let i = 1; i <= n; i++) {
-            console.log(base1);
-
-            other = base1 + base2;
-            base1 = base2;
-            base2 = other;
+            var no1 = document.getElementById("no1").value;
+            var no2 = document.getElementById("no2").value;
+            var sum = no1 + no2;
+            document.write("sum:==" + sum);
         }
-        document.getElementById("para5").innerHTML = base1;
+
+        function square() {
+            var no3 = document.getElementById("no3").value;
+            document.write("square==" + (no3 * no3));
+        }
+        function factorial() {
+            var no4 = document.getElementById("no4").value;
+            let result = 1;
+            for (let i = 1; no4 >= i; i++)
+                result = result * i;
+
+            document.write("factorial=" + result);
+        }
+
+        function fico() {
+            var no5 = document.getElementById("no5").value;
+            var base1 = 0, base2 = 1, other;
+            for (let i = 1; i <= no5; i++) {
+
+
+                other = base1 + base2;
+                base1 = base2;
+                base2 = other;
+            }
+
+            document.write("fibonacci series number at " + no5 + " position==" + base1);
+        }
 
     </script>
 </body>
