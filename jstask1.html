@@ -8,7 +8,7 @@
     <title>Java script tut </title>
 </head>
 
-<body>
+<body style="background:linear-gradient(red,yellow,black)">
     <center>
         <h1>JAVA SCRIPT TASK 1</h1>
         <h2>Name and address</h2>
@@ -17,18 +17,19 @@
         <form>
             enter first no: <input type="number" placeholder="number" id="no1">
             enter second no: <input type="number" placeholder="number" id="no2">
-            <input type="submit" value="submit" onclick="add()">
+            <button type="button" onclick="add()"> add</button>
             <h2>square of number</h2>
             enter no: <input type="number" placeholder="number" id="no3">
-            <input type="submit" value="submit" onclick="square()">
+            <button type="button" onclick="square()">square</button>
             <h2> factorial of a number</h2>
             enter no: <input type="number" placeholder="number" id="no4">
-            <input type="submit" value="submit" onclick="factorial()">
+            <button type="button" onclick="factorial()">factorial</button>
             <h2> fibonacci series number at nth position</h2>
             enter position: <input type="number" placeholder="number" id="no5">
 
-            <input type="submit" value="submit" onclick="fico()">
+            <button type="button" onclick="fico()">getno</button>
         </form>
+        <div id="result" style="border:5px solid black; height: 300px; font-size: 50px;">RESULTS</div>
     </center>
     <script>
         //print name and address
@@ -36,15 +37,18 @@
         //Addition of two number
         function add() {
 
-            var no1 = document.getElementById("no1").value;
-            var no2 = document.getElementById("no2").value;
-            var sum = no1 + no2;
-            document.write("sum:==" + sum);
+            const no1 = document.getElementById("no1").value;
+            const no2 = document.getElementById("no2").value;
+            var added = parseInt(no1) + parseInt(no2);
+
+            document.getElementById("result").innerText = "sum==" + added;
         }
+
 
         function square() {
             var no3 = document.getElementById("no3").value;
-            document.write("square==" + (no3 * no3));
+            const sqr = no3 * no3;
+            document.getElementById("result").innerText = "square==" + sqr;
         }
         function factorial() {
             var no4 = document.getElementById("no4").value;
@@ -52,13 +56,13 @@
             for (let i = 1; no4 >= i; i++)
                 result = result * i;
 
-            document.write("factorial=" + result);
+            document.getElementById("result").innerText = "factorial==" + result;
         }
 
         function fico() {
             var no5 = document.getElementById("no5").value;
             var base1 = 0, base2 = 1, other;
-            for (let i = 1; i <= no5; i++) {
+            for (let i = 1; i < no5; i++) {
 
 
                 other = base1 + base2;
@@ -66,7 +70,7 @@
                 base2 = other;
             }
 
-            document.write("fibonacci series number at " + no5 + " position==" + base1);
+            document.getElementById("result").innerText = "fibonacci series number at " + no5 + " position==" + base1;
         }
 
     </script>
