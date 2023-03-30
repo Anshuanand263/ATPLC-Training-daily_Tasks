@@ -42,7 +42,7 @@
         <button type="button" id="increasesize" onclick="f1()">INCREASE-size</button>
         <button type="button" id="decreasesize" onclick="f2()">DECREASE-size</button>
         <p id="text">Always try to achieve maximum</p><br>
-        <div id="date"></div>
+        <h2 id="date"></h2>
         <script>
             function fico() {
 
@@ -99,9 +99,11 @@
 
                 text.style.fontSize = `${fontSize}px`;
             };
-            const d = new Date("2022-03-25");
+            setInterval(() => {
+                const d = new Date()
 
-            document.getElementById("date").innerHTML = "date: " + d;
+                document.getElementById("date").innerText = "date: " + d;
+            }, 1000);
 
         </script>
     </center>
