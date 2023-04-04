@@ -4,8 +4,11 @@
 <head>
     <title>table html</title>
     <style>
+          body{
+            background-color: rgb(223, 209, 192);
+        }
         table {
-            background-color: lightblue;
+            background:linear-gradient(rgba(192, 192, 136, 0.607) ,rgb(214, 189, 189) ,rgb(96, 69, 127));
             height: 500px;
             width: 600px;
         }
@@ -19,19 +22,24 @@
             font-weight: bolder;
             text-align: center;
         }
+        div{
+            display: flex;
+            padding: 50px;
+        column-gap: 40px;
+        }
     </style>
 
 </head>
 
 <body>
-
+<div>
     <table border="5">
         <caption><b>SHOPPING BILL</b></caption>
         <tr>
             <th colspan="3">invoice#123456789</th>
             <th>18 january 2022</th>
         </tr>
-        <tr>
+        <tr >
             <td colspan="2"><b>pay to:</b>
                 <br>Acme billing co.<br>123 Main st. <br>cityville,NA12345
             </td>
@@ -71,6 +79,50 @@
             <td>118.80</td>
         </tr>
     </table>
+    <table border="5">
+        <caption><b>RESULT</b></caption>
+        <tr>
+            <th >Name</th>
+            <th>sem</th>
+            <th>cgpa</th>
+            
+           
+        </tr>
+        <tr>
+            <td colspan="2">1st SEM</td>
+            <td>9.6</td>
+        </tr>
+        <tr>
+            <td colspan="2">2nd SEM</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td colspan="2">3rd SEM</td>
+            <td>N A</td>
+        </tr>
+        <tr>
+            <td colspan="2">4th SEM</td>
+            <td>N A</td>
+        </tr>
+        <tr>
+            <td colspan="2">5th SEM</td>
+            <td>N A</td>
+        </tr>
+        <tr>
+            <td colspan="2">6th SEM</td>
+            <td>N A</td>
+        </tr>
+        <tr>
+            <td colspan="2">7th SEM</td>
+            <td>N A</td>
+        </tr>
+        <tr>
+            <td colspan="2">8th SEM</td>
+            <td>N A</td>
+        </tr>
+        
+    </table>
+</div>
 </body>
 
 </html>
