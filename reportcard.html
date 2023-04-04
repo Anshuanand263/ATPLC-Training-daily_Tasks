@@ -4,8 +4,11 @@
 <head>
     <title>table html</title>
     <style>
+        body{
+            background-color: rgb(223, 209, 192);
+        }
         table {
-            background-color: lightblue;
+            background:linear-gradient(rgba(192, 192, 136, 0.607) ,rgb(214, 189, 189) ,rgb(96, 69, 127));
             height: 500px;
             width: 600px;
         }
@@ -19,13 +22,22 @@
             font-weight: bolder;
             text-align: center;
         }
+        div{
+            display: flex;
+            padding: 50px;
+        column-gap: 40px;
+        }
+        caption{
+            text-decoration: solid; font-style:italic;
+        }
+       
     </style>
 </head>
 
 <body>
-
+<div>
     <table border="5">
-        <caption style="text-decoration: solid; font-style:italic">STUDENT REPORT CARD</caption>
+        <caption >STUDENT REPORT CARD</caption>
         <tr>
             <td colspan="3">NAME:ANSHU ANAND</td>
             <td>5</td>
@@ -54,6 +66,40 @@
             <th>339</th>
         </tr>
     </table>
+    <table border="5">
+        <caption>FRIEND</caption>
+    <tr>
+        <th>NAME</th>
+        <th>HOMETOWN</th>
+        <th>CONTACT</th>
+    </tr>
+    <tr>
+        <td>Anshu kumar</td>
+        <td>lakhisarai</td>
+        <td>7952xxxxxx</td>
+    </tr>
+    <tr>
+        <td>Sumant kumar</td>
+        <td>Bihta</td>
+        <td>6235xxxxxx</td>
+    </tr>
+    <tr>
+        <td>Raushan kumar</td>
+        <td>lakhisarai</td>
+        <td>8252xxxxxx</td>
+    </tr>
+    <tr>
+        <td>Bittu kumar</td>
+        <td>begusarai</td>
+        <td>8254xxxxxx</td>
+    </tr>
+    <tr>
+        <td>Nitish kumar</td>
+        <td>gaya</td>
+        <td>8264xxxxxx</td>
+    </tr>
+</table>
+</div>
 </body>
 
 </html>
