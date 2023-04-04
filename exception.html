@@ -6,9 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+    </style>
+
+
 </head>
 
 <body>
+
+    <h2> Write a program to handle the exception caused by printing the variable without declaring it.</h2>
+    <button type="button" onclick="except1()">check</button>
+    <h3 id="except0"></h3>
+    <h3 id="except1"></h3>
+    <h2> Write a program to throw "divide by Zero" error using throw statement when a number is divided by Zero.</h2>
+    <button type="button" onclick="except2()">check</button>
+    <h3 id="except2"> </h3>
+    <h2> Write a program to throw "out of bound error " error using throw statement when a program try to access an
+        array index which is not present.</h2>
+    <button type="button" onclick="except3()">check</button>
+    <h3 id="except3"> </h3>
+    <h2>. Write a program of exception handling using finally statement..</h2>
+    <button type="button" onclick="except4()">check</button>
+    <h3 id="except4"> </h3>
+
+
+    <script>
+        function except1() {
+            try {
+                var a = 1000;
+                // var b = 2000;
+
+                document.getElementById("except0").innerText = a;
+                document.getElementById("except1").innerText = b;
+
+            } catch (e) {
+
+                document.write("Message:" + e.message + "    <br>")
+
+                document.write("Name:" + e.name)
+
+            }
+        }
+        function except2() {
+            function check(a, b) {
+                if (b == 0)
+                    throw "number is divided by zero";
+                else
+                    return a / b;
+            }
+            try {
+                const a = 10;
+                const b = 0;
+                check(a, b);
+            }
+            catch (e) {
+                document.write(e);
+            }
+        }
+        function except3() {
+            function check(a, n) {
+                if (n >= 5)
+                    throw "out of bound error";
+
+            }
+            try {
+                const a = [1, 2, 3, 4, 5];
+
+                check(a[6], a.length);
+            }
+            catch (e) {
+                document.write(e);
+            }
+
+        }
+        function except4() {
+            try {
+                scan(a, c);
+
+            } catch (e) {
+
+                document.write("Message:" + e.message + "    <br>")
+
+                document.write("Name:" + e.name + "<br>")
+
+            }
+            finally {
+
+                document.write("Good luck<br>better try again");
+            }
+        }
+
+    </script>
 
 </body>
 
